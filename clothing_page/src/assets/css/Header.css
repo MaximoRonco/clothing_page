@@ -1,3 +1,52 @@
-header{
-    background-color: beige;
+:root{
+    --color-letter:#000000;
+    --color-hover:#333333;
+}
+
+#style-header{
+    display: flex;
+    background-color: #ffffff;
+    color: var(--color-letter);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 20px;
+}
+
+#logo{
+    height: 80px;
+    width: 300px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.my-link{
+    text-decoration: none;
+    color: var(--color-letter) ;
+    font-size: 18px;
+    font-weight:500;
+    margin: 0 20px;
+}
+
+.my-link:hover{
+    color:var(--color-hover);
+    border-bottom: 2px solid black;
+    transition: all 50ms;
+}
+
+.my-link-cart{
+    position: absolute;
+    right:45px;
+}
+
+#icon-cart{
+    width:30px;
+    height: 30px;
 }

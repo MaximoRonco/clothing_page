@@ -1,20 +1,34 @@
 import React from 'react'
 import "../assets/css/Header.css"
+import iconCart from "../assets/statics/shopping-bag64.png"
+import logo from "../assets/statics/Logo-remove.png"
+import { Link } from 'react-router-dom'
+
 
 export default function Header() {
-    let llamanos = document.getElementById("llamanos")
-    const handleClick = () =>{
-        alert("Ouch")
-    }
+    
     return (
-    <header>
-        <ul>
-            <a href='/'>Inicio</a>
-            <a href='/men'>Men</a>
-            <a href='/women'>Women</a>
-            <a href='/contact'>Contact Us</a>
-            <li><button id='llamanos' onClick={handleClick}>Llamanos</button></li>
-        </ul>
-    </header>
+        <div id='style-header'>
+            <img id="logo" src={logo} alt="" />
+            <header>
+            <ul>
+                <li>
+                <Link to='/' className='my-link'>Home</Link>
+                </li>
+                <li>
+                <Link to='/men' className='my-link'>Men</Link>
+                </li>
+                <li>
+                <Link to='/women' className='my-link'>Women</Link>
+                </li>
+                <li>
+                <Link to='/contact' className='my-link'>Contact</Link>
+                </li>
+                <li>
+                <Link to='/cart' className='my-link-cart'><img id="icon-cart" src={iconCart} alt="" /></Link>
+                </li>
+            </ul>
+            </header>
+        </div>
 )
-}
+    }
