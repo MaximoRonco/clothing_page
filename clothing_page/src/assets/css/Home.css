@@ -13,12 +13,66 @@
 #next-banner{
     position: absolute;
     right: 50px;
-    top: 650px;
+    top: 550px;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+#next-banner:hover{
+    font-size: 42px;
+    transition: all 200ms;
 }
 
 #back-banner{
     position: absolute;
     left: 50px;
-    top: 650px;
+    top: 550px;
+    border: none;
+    font-size: 40px;
+    background-color: transparent;
+    
 }
 
+#back-banner:hover{
+    font-size: 41px;
+    transition: all 200ms;
+}
+
+#cont-banner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%; /* Proporción del contenedor (ajústalo según tus necesidades) */
+    overflow: hidden;
+}
+
+#cont-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar imagen para cubrir el contenedor */
+}
+
+#products-featured{
+    padding-top: 50px;
+    background-color: #f2f2f2;
+    height: 0;
+    padding-bottom: 50%;
+}
+
+.cont-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-product{
+    margin: 30px;
+    background-color: black;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
