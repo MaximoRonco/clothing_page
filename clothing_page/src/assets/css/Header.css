@@ -50,3 +50,9 @@ header ul{
     width:30px;
     height: 30px;
 }
+
+#icon-cart:hover{
+    width: 31px;
+    height: 31px;
+    transition: all 100ms;
+}
