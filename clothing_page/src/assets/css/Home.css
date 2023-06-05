@@ -1,3 +1,7 @@
+:root{
+    --secondary-color: #f2f2f2;
+}
+
 #banner{
     width: 100%;
     height: 900px;
@@ -81,7 +85,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #f2f2f2;
+    background-color: var(--secondary-color);
 }
 
 #products-featured h1{
@@ -119,4 +123,56 @@
     border-radius: 15px;
     height: 300px;
     width: 300px;
+}
+
+#last-box{
+    display: flex;
+    justify-content: center;
+    background-color: #616161;
+    width: 100%;
+    height: 650px;
+}
+
+#child-last-box{
+    display: flex;
+    align-self:center;
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 70%;
+    box-shadow: 1px 2px 2px black;
+    border-radius: 5px;
+}
+
+#child-last-box img{
+    height: 520px;
+    width: 520px;
+    margin-top: -70px;
+    margin-left: 200px;
+}
+
+#cont-last-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 40%;
+    border-radius: 5px;
+    padding-left: 150px;
+}
+
+#cont-last-box h3{
+    font-size: 40px;
+}
+
+#cont-last-box p{
+    font-size: 20px;
+}
+
+#cont-last-box button{
+    margin-top: 15px;
+    font-size: 20px;
+    width: 120px;
+    background-color: black;
+    border-color: #616161;
 }

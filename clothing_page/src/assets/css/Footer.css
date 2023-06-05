@@ -1,8 +1,31 @@
 #footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: black;
     color: white;
-    height: 100px;
-    line-height: 100px;
+    height: 400px;
+}
+
+
+#social-networks{
+    display: flex;
+}
+
+.social{ 
+    margin: 10px 9px;
+    font-size: 20px;
+}
+
+.social:hover{ 
+    transform: scale(1.1);
+}
+
+
+#footer span{ 
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.col-footer{
+    margin-top: 70px;
 }
