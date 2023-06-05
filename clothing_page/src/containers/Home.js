@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
-
 export default function Home() {
   const [mostrarBanner, setMostrarBanner] = useState(true);
 
@@ -38,12 +37,14 @@ export default function Home() {
         {mostrarBanner ? (
           <div>
             <img id="banner" src={banner} alt="" />
+            <button className='buy_banner' style={{backgroundColor:"#859eb7", color:"white"}}>BUY NOW</button>
             <button id='next-banner' onClick={nextBanner}><FontAwesomeIcon icon={faChevronRight}/></button>
             <button id='back-banner' onClick={backBanner}><FontAwesomeIcon icon={faChevronLeft}/></button>
           </div>
         ) : (
           <div>
             <img id="banner-sale" src={banner_sale} alt="" />
+            <button className='buy_banner'>BUY NOW</button>
             <button id='next-banner' onClick={nextBanner}><FontAwesomeIcon icon={faChevronRight} style={{color: "#ffffff"}} /></button>
             <button id='back-banner' onClick={backBanner}><FontAwesomeIcon icon={faChevronLeft} style={{color: "#ffffff"}} /></button>
           </div>
@@ -59,7 +60,7 @@ export default function Home() {
           <div className='box-product'></div>
         </div>
         <div className="background">
-          <div className='box-product'></div>
+          <div className='box-product'><button type="button" class="btn btn-primary">Primary</button></div>
         </div>
       </div>
       <div className="cont-product">
