@@ -2,6 +2,7 @@ import React from 'react'
 import "../assets/css/Home.css"
 import banner from "../assets/statics/banner-newArrival.png"
 import banner_sale from "../assets/statics/banner-oferta.png"
+import nike_blz from "../assets/statics/nike-blzer.jpg"
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
@@ -49,15 +50,28 @@ export default function Home() {
         )}
     </div>
     <div id='products-featured'>
+      <h1>Featured products</h1>
       <div className="cont-product">
-        <div className='box-product'></div>
-        <div className='box-product'></div>
-        <div className='box-product'></div>
+        <div className="background">
+          <div className='box-product'><img src={nike_blz} alt="" /></div>
+        </div>
+        <div className="background">
+          <div className='box-product'></div>
+        </div>
+        <div className="background">
+          <div className='box-product'></div>
+        </div>
       </div>
       <div className="cont-product">
-        <div className='box-product'></div>
-        <div className='box-product'></div>
-        <div className='box-product'></div>
+        <div className="background">
+            <div className='box-product'></div>
+          </div>
+          <div className="background">
+            <div className='box-product'></div>
+          </div>
+          <div className="background">
+            <div className='box-product'></div>
+          </div>
       </div>
     </div>
   </div>
