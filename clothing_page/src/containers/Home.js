@@ -4,6 +4,11 @@ import banner from "../assets/statics/banner-newArrival.png"
 import banner_sale from "../assets/statics/banner-oferta.png"
 import nike_blz from "../assets/statics/nike-blzer.jpg"
 import vans from "../assets/statics/vans-remove.png"
+import adidas_blue from "../assets/statics/adidas_blue.jpg"
+import nike_sombra from "../assets/statics/nike_sombra.jpg"
+import botines from "../assets/statics/nike_botines.jpg"
+import adidas_Cons from "../assets/statics/adidas_Consortium.jpg"
+import nike_drift from "../assets/statics/nike_drift.jpg"
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
@@ -85,6 +90,15 @@ export default function Home() {
         </div>
         <img src={vans} alt="" />
       </div>
+    </div>
+    <div id="trends">
+        <h1>TRENDS</h1>
+        <div id="trends-cont">
+          <div className="box-trend"><img src={adidas_Cons} alt="" /><h3>Adidas Consortium</h3></div>
+          <div className="box-trend"><img src={nike_sombra} alt="" /><h3>Nike Sombra</h3></div>
+          <div className="box-trend"><img src={adidas_blue} alt="" /><h3>Adidas Forum</h3></div>
+          <div className="box-trend"><img src={nike_drift} alt="" /><h3>Nike Driftwood</h3></div>
+        </div>
     </div>
   </div>
   )

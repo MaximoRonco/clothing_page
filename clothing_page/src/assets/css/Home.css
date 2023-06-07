@@ -53,7 +53,7 @@
 
 .buy_banner{
     position: absolute;
-    left: 50%;
+    left: 46.5%;
     top: 87%;
     width: 150px;
     height: 50px;
@@ -86,6 +86,7 @@
     align-items: center;
     flex-direction: column;
     background-color: var(--secondary-color);
+    padding-bottom: 100px;
 }
 
 #products-featured h1{
@@ -123,6 +124,12 @@
     border-radius: 15px;
     height: 300px;
     width: 300px;
+}
+
+.background:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.5);
+    transform: rotateY(360deg) ;
+    transition: all 1000ms;
 }
 
 #last-box{
@@ -175,4 +182,49 @@
     width: 120px;
     background-color: black;
     border-color: #616161;
+}
+
+#trends{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 105px;
+}
+
+#trends h1{
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#trends-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box-trend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.box-trend h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: auto;
+}
+
+.box-trend img{
+    width: 370px;
+    height: 500px;
+}
+
+.box-trend video{
+    width: 550px;
+    height: 450px;
+    margin-right: -80px;
 }
